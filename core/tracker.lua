@@ -3,7 +3,6 @@ local tracker = {
     pit_start_time = 0,
     ga_chest_opened = false,
     selected_chest_opened = false,
-    gold_chest_opened = false,
     finished_chest_looting = false,
     has_salvaged = false,
     exit_horde_start_time = 0,
@@ -15,6 +14,7 @@ local tracker = {
     exit_horde_completed = true,
     wave_start_time = 0,
     needs_salvage = false,
+    force_horde_start = false,  -- New flag to force start a new horde
 }
 
 function tracker.check_time(key, delay)

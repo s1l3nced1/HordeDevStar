@@ -280,4 +280,6 @@ function utils.get_aether_actor()
     return nil
 end
 
-return utils
+function utils.get_player_gold()
+    return get_local_player():get_gold()
+end
